@@ -19,9 +19,9 @@ interface IApprovalReceiver {
 /// balance of ETH deposited minus the ETH withdrawn with that specific wallet.
 contract WETH10 is IWETH10 {
 
-    string public constant name = "Wrapped Ether v10";
-    string public constant symbol = "WETH10";
-    uint8  public constant decimals = 18;
+    string public constant name = "Gwei Token (Forked from WETH10)";
+    string public constant symbol = "GWEI";
+    uint8  public constant decimals = 9;
 
     bytes32 public immutable CALLBACK_SUCCESS = keccak256("ERC3156FlashBorrower.onFlashLoan");
     bytes32 public immutable PERMIT_TYPEHASH = keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)");
